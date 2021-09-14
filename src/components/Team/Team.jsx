@@ -7,6 +7,7 @@ import Footer from "../Footer/Footer.jsx";
 import Members from "./TeamData.js";
 
 var faculty_coordinator = Members.faculty_coordinator;
+var alumni = Members.alumni;
 
 var third_year = Members.third_year;
 
@@ -40,7 +41,30 @@ export default class Team extends React.Component{
                         </div>
                         </div>
                         <br/><br/><br/>
+                    <h1 id='team'>Alumni</h1>
+                    <br />
+                    <div class="container mt-40">
+                        <div class="row mt-30">
+                            {alumni.map((m, index) => {
+                                return <div class="col-lg-3 col-md-6 col-sm-6 ">
+                                    <div class="box16">
+                                        <img src={`..${m.image}`} />
+                                        <div class="box-content">
+                                            <h3 class="title">{m.name}</h3>
+                                            <span class="post">{m.designation}</span>
+                                            <ul class="social">
+                                                <li><a href={m.linkedin}><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href={"mailto:" + m.mail}><i class="fa fa-envelope"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    {index % 4 == 3 && <br />}
+                                </div>
+                            })}
+                        </div>
+                    </div>
 
+                    <br /><br /><br />
 
                     <h1 id = 'team'>THIRD YEAR</h1>
                     <br/>
