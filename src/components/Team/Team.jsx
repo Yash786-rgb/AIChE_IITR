@@ -103,7 +103,6 @@ export default class Team extends React.PureComponent{
                                         <img src={`..${m.image}`} />
                                         <div class="box-content">
                                             <h3 class="title">{m.name}</h3>
-                                            <span class="post">{m.designation}</span>
                                             <ul class="social">
                                                 <li><a href={m.linkedin}><i class="fa fa-linkedin"></i></a></li>
                                                 <li><a href={"mailto:" + m.mail}><i class="fa fa-envelope"></i></a></li>
