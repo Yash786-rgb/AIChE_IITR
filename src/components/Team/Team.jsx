@@ -5,6 +5,7 @@ import Navbar from "../Navbar/Navbar.jsx";
 import Footer from "../Footer/Footer.jsx";
 
 import Members from "./TeamData.js";
+var previous_members = Members.previous_members;
 
 var faculty_coordinator = Members.faculty_coordinator;
 
@@ -89,6 +90,31 @@ export default class Team extends React.PureComponent{
                         })}
                     </div>
                 </div>
+                
+                <br /><br /><br />
+                
+                <h1 id='team'>Previous Members</h1>
+                    <br />
+                    <div class="container mt-40">
+                        <div class="row mt-30">
+                            {previous_members.map((m, index) => {
+                                return <div class="col-lg-3 col-md-6 col-sm-6 ">
+                                    <div class="box16">
+                                        <img src={`..${m.image}`} />
+                                        <div class="box-content">
+                                            <h3 class="title">{m.name}</h3>
+                                            <span class="post">{m.designation}</span>
+                                            <ul class="social">
+                                                <li><a href={m.linkedin}><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href={"mailto:" + m.mail}><i class="fa fa-envelope"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    {index % 4 == 3 && <br />}
+                                </div>
+                            })}
+                        </div>
+                    </div>       
             </center>
             </div>
         )
