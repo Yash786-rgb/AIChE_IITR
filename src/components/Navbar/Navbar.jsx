@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import Contact_us_Modal from "../Contact_us_modal/Contact_us_modal.jsx";
 
 
+import {Link} from "react-router-dom";
 
-var $ = window.$;
 
-class NavigationBar extends Component {
+class NavigationBar extends React.Component {
 
     render() {
         const routes = [
@@ -43,20 +43,21 @@ class NavigationBar extends Component {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ml-auto" >
-                            {routes.map(r => {
+                            {routes.map(r => 
+                                {
                                 if (this.props.active == r) {
                                     return (
                                         <li className="nav-item active">
-                                            {r != "Home" && <a class="nav-link" href={"/" + r}>{r}</a>}
-                                            {r == "Home" && <a class="nav-link" href={"/"}>{r}</a>}
+                                            {r != "Home" && <Link class="nav-link" to={"/" + r}>{r}</Link>}
+                                            {r == "Home" && <Link class="nav-link" to={"/"}>{r}</Link>}
                                         </li>
                                     )
                                 }
                                 else {
                                     return (
                                         <li className="nav-item">
-                                        {r != "Home" && <a class="nav-link" href={"/" + r}>{r}</a>}
-                                        {r == "Home" && <a class="nav-link" href={"/"}>{r}</a>}
+                                        {r != "Home" && <Link class="nav-link" to={"/" + r}>{r}</Link>}
+                                        {r == "Home" && <Link class="nav-link" to={"/"}>{r}</Link>}
                                         </li>
                                     )
                                 }

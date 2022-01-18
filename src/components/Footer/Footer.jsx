@@ -7,9 +7,9 @@ export default class Footer extends React.Component{
         return(
             <footer class="footer-distributed">
 	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
 
-	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"></link>
+                <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"></link>
                 <div class="footer-left">
 
                 <img src={`../AIChE_logo.png`} id = 'aiche_logo'/>
