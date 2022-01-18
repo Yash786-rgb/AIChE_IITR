@@ -10,14 +10,12 @@ import Aboutus from "./aboutus.jsx";
 
 
 // import Team from "../Team/Team.jsx";
-export default class Home extends React.Component{
+export default class Home extends React.PureComponent{
     render(){
         return(
             <div className = "Home">
-                <Navbar active = {"Home"}/>
                 <CarouselComponent/>
                 <Aboutus/>
-                <Footer/>
             </div>
         )
     }
