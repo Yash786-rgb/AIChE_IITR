@@ -127,7 +127,7 @@ var second_year = [
     designation: "Web Developer",
     image: "/teamImages/harshit_goyal.png",
     mail: "Harshit_g@ch.iitr.ac.in",
-    linkedin: "Harshit_g@ch.iitr.ac.in"
+    linkedin: "https://www.linkedin.com/in/harshit-goyal-668401200"
 },
 {
     name:"Ayushi Raj",
@@ -163,6 +163,13 @@ var second_year = [
     image: "/teamImages/manan_khandelwal.png",
     mail: "manan_k@ch.iitr.ac.in",
     linkedin: ""
+},
+{
+    name: "Navya Mamoria",
+    designation: "Technical and Innovator",
+    image: "/teamImages/navya_mamoria.png",
+    mail: "navya_m@ch.iitr.ac.in",
+    linkedin: "https://www.linkedin.com/in/navya-mamoria-9571a4206"
 }
 ]
 
