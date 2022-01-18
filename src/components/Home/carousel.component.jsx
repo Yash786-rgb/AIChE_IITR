@@ -23,6 +23,7 @@ export default function CarouselComponent() {
           }}
         >
           <img
+            style={{ height: "1200px" }}
             // height="200px"
             className="d-block w-100 carouselImage"
             src={`../home_page_images/main2.jpg`}
@@ -36,6 +37,7 @@ export default function CarouselComponent() {
           }}
         >
           <img
+            style={{ height: "1200px" }}
             // height="100px"
             className="d-block w-100 carouselImage"
             src={`../home_page_images/chemicaldpt.jpg`}
@@ -49,6 +51,7 @@ export default function CarouselComponent() {
           }}
         >
           <img
+            style={{ height: "1200px" }}
             // height="600px"
             className="d-block w-100 carouselImage"
             src={`../home_page_images/SIH.png`}
