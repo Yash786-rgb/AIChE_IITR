@@ -67,14 +67,6 @@ class NavigationBar extends React.Component {
                   );
                 }
               })}
-              <a
-                style={{ color: "rgb(156 148 148)", marginTop: "9px" }}
-                href="#myModal"
-                role="button"
-                data-toggle="modal"
-              >
-                Contact Us
-              </a>
             </ul>
           </div>
         </nav>
