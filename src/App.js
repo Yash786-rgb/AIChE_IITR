@@ -7,8 +7,9 @@ import Team from "./components/Team/Team.jsx";
 import Activities from "./components/Activities/Activities.jsx";
 
 import React from "react";
+import Contact from "./components/Contact_us_modal/Contact.js";
 
-import './index.css';
+import "./Assets/css/main.css"
 
 import Navbar from "./components/Navbar/Navbar.jsx";
 
@@ -28,6 +29,7 @@ class App extends React.Component{
               <Route exact path = "/Blogs" render ={() => <Blogs/>} />
               <Route exact path = "/Activities" render = {() => <Activities/>} />         
               <Route exact path = "/Team" render = {() => <Team/>} />
+              <Route exact path = "/Contact" render = {() => <Contact/>} />  
               <Footer/>
           </Router>
   }
