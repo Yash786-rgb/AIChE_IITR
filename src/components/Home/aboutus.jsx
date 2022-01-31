@@ -12,6 +12,8 @@ export default class Aboutus extends React.PureComponent {
           textAlign: "justify",
           marginLeft: "-5",
           marginRight: "-5",
+          backgroundColor: "#f1f5f8",
+          paddingBottom: "80px",
         }}
       >
         <br />
@@ -19,9 +21,10 @@ export default class Aboutus extends React.PureComponent {
         <h1
           style={{
             textAlign: "center",
-            color: "#F4F9F9",
-            borderRadius: "20px",
-            background: "#A4EBF3",
+            color: "#bff8fd",
+            borderRadius: "0.25rem",
+            background: "#2caeba",
+            letterSpacing: "0.1rem",
           }}
         >
           {" "}
@@ -50,8 +53,9 @@ export default class Aboutus extends React.PureComponent {
               className="aboutUsText"
               style={
                 ({ textAlign: "justify" },
-                { textSizeAdjust: "auto" },
-                { fontSize: "20 px" })
+                { fontSize: "0.875rem" },
+                { wordSpacing: "15px" },
+                { color: "#617d98" })
               }
             >
               The American Institute of Chemical Engineering Chapter at IIT
