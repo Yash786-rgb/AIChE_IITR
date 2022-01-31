@@ -18,12 +18,10 @@ export default class Team extends React.Component {
     return (
       <div className="Team">
         <Navbar active={"Team"} />
-        <br />
-        <br />
+
         <center>
+          <h2 id="team">FACULTY COORDINATOR</h2>
           <br />
-          <br />
-          <h1 id="team">FACULTY COORDINATOR</h1>
           <div class="container mt-50">
             <div class="col-md-3 col-sm-6">
               <div class="box16">
@@ -47,11 +45,8 @@ export default class Team extends React.Component {
               </div>
             </div>
           </div>
-          <br />
-          <br />
-          <br />
 
-          <h1 id="team">THIRD YEAR</h1>
+          <h2 id="team">THIRD YEAR</h2>
           <br />
           <div class="container mt-40">
             <div class="row mt-30">
@@ -84,11 +79,7 @@ export default class Team extends React.Component {
             </div>
           </div>
 
-          <br />
-          <br />
-          <br />
-
-          <h1 id="team">SECOND YEAR</h1>
+          <h2 id="team">SECOND YEAR</h2>
           <br />
           <div class="container mt-40">
             <div class="row">
@@ -120,10 +111,8 @@ export default class Team extends React.Component {
               })}
             </div>
           </div>
-          <br />
-          <br />
-          <br />
-          <h1 id="team">PREVIOUS MEMBERS</h1>
+
+          <h2 id="team">PREVIOUS MEMBERS</h2>
           <br />
           <div class="container mt-40">
             <div class="row mt-30">
